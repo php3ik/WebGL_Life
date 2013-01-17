@@ -217,11 +217,11 @@ Life.listNear = function(cell)
     row = ob.row;
     col = ob.col-1;
     if(col < 0) col = Life.nCol-1; // враховуєм що середовище - тор
-    list[Life.getId(row, col)] = 1; // клітинка 4 (по схеме соседей)
+    list[Life.getId(row, col)] = 1; // клітинка 4
 
     col = ob.col+1;
     if(col >= Life.nCol) col = 0; // враховуєм що середовище - тор
-    list[Life.getId(row, col)] = 1; // клітинка 5 (по схеме соседей)
+    list[Life.getId(row, col)] = 1; // клітинка 5 
 
     row = ob.row+1;
     if(row >= Life.nRow) row = 0 // враховуєм що середовище - тор
@@ -231,7 +231,7 @@ Life.listNear = function(cell)
     col = ob.col-1;
 
     if(col < 0) col = Life.nCol-1; // враховуєм що середовище - тор
-    list[Life.getId(row, col)] = 1; // клітинка 7 (по схеме соседей)
+    list[Life.getId(row, col)] = 1; // клітинка 7 
 
     col = ob.col+1;
     if(col >= Life.nCol) col = 0; // враховуєм що середовище - тор
